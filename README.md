@@ -1,6 +1,8 @@
 # Default starter for Gridsome
 
-This is the project you get when you run `gridsome create new-project`.
+Source code for my tech blog
+
+Follow the instructions below to create your own static gridsome blog
 
 ### 1. Install Gridsome CLI tool if you don't have
 

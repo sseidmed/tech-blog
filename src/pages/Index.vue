@@ -3,9 +3,9 @@
 
     <!-- Learn how to use images here: https://gridsome.org/docs/images -->
 
-    <ul>
-      <li v-for="post in $page.posts.edges" :key="post.id">
-        <g-link :to="post.node.path"> {{ post.node.title}} - {{ post.node.date }}
+    <ul class="posts">
+      <li v-for="post in $page.posts.edges" :key="post.id" class="individual-post">
+        <g-link :to="post.node.path"> {{ post.node.title}} <span class="date">{{ post.node.date }}</span>
           </g-link>
       </li>
     </ul>
@@ -38,7 +38,6 @@ query Posts ($page: Int) {
 
 </page-query>
 
-
 <script>
 import { Pager } from 'gridsome'
 export default {
@@ -55,7 +54,6 @@ export default {
 .home-links a {
   margin-right: 1rem;
 }
-
 .pager-container {
   display: inline-block;
   font-size: 1rem;
@@ -63,7 +61,6 @@ export default {
   width: 100%;
   color: black;
 }
-  
 .pager-container__link {
     text-align: center;
     padding: 0.8rem 1.2rem;
@@ -72,11 +69,29 @@ export default {
     border-radius: 50%;
     margin: 2px;
 }
-
 .active {
   background-color:  rgb(231,172,207);
   border-radius: 50%;
   border: none;
 }
 
+.posts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.individual-post {
+  width: 100%;
+  border: 1px solid rgb(220,220,220);
+  padding: 10px;
+  font-size: 18px;
+  color: white;
+  border-radius: 1px;
+  box-shadow: 0 0 20px -1em black;
+  text-decoration: none;
+}
+
+.date {
+  float: right;
+}
 </style>

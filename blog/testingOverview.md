@@ -74,7 +74,7 @@ A [_test double_](https://oreil.ly/vbpiU) is an object or function that can st
 
 ## Testing at Relevize: Frameworks and Libraries (Unfinished)
 
-In our codebase, to implement unit testing, we will be using [Vite](https://vitest.dev/) and [Vue Test Utils](https://v1.test-utils.vuejs.org/). 
+In our codebase, to implement unit testing, we will be using [Vitest](https://vitest.dev/) and [Vue Test Utils](https://v1.test-utils.vuejs.org/). 
 
 ## *More resources*  
 Winters, Titus, et al. *Software Engineering at Google: Lessons Learned from Programming over Time.* O'Reilly, 2020 (Chapters 11-14)

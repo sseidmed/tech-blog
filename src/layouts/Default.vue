@@ -10,7 +10,6 @@
       <nav class="nav">
         <g-link class="nav__link" to="/">Blog</g-link>
         <g-link class="nav__link" to="/about/">About</g-link>
-        <g-link class="nav__link" to="/contact/">Contact</g-link>
       </nav>
     </header>
     <hr>
@@ -25,14 +24,6 @@ query {
   }
 }
 </static-query>
-
-<script>
-
-export default({
-
-
-})
-</script>
 
 <style>
 body {
@@ -62,11 +53,8 @@ body {
   margin-left: 20px;
 }
 
-
-
 .logo {
   display: flex;
-
 }
 
 .blog-name {

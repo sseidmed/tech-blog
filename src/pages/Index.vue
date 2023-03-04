@@ -46,7 +46,7 @@ export default {
     Pager
   },
   metaInfo: {
-    title: 'Hello, world!'
+    title: 'Tech blog'
   }
 }
 </script>

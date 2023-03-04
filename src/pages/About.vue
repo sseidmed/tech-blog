@@ -15,7 +15,10 @@
       </div> -->
       
     </footer>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error doloremque omnis animi, eligendi magni a voluptatum, vitae, consequuntur rerum illum odit fugit assumenda rem dolores inventore iste reprehenderit maxime! Iusto.</p>
+    <p>I am a junior developer at Relevize (partner execution platform built for sellers and partners). 
+      I work with Vue.js and Flask, but also proficient in Angular and .NET platform. 
+      I am always open to learning new things.
+      This blog was built with Gridsome.</p>
   </Layout>
 </template>
 

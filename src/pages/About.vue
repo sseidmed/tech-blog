@@ -1,24 +1,19 @@
 <template>
   <Layout>
-    <h1>About me</h1>
-    <footer>
-      <div class="author">
-        <img src="../../static/glasses.png" alt="" width="50px" height="50px"><p>Author: Shay Seidmedova</p>
-      </div>
+    <div class="about">
+      <h1>About me</h1>
       <p class="home-links">
         <a href="https://www.linkedin.com/in/shahlo-seidmedova/" target="_blank" rel="noopener"><img src="../../static/linkedin.png" alt="linkedin link" width="30px" height="30px"></a>
         <a href="https://github.com/sseidmed" target="_blank" rel="noopener"><img src="../../static/github.png" alt="github link" width="30px" height="30px"></a>
-        <a href="mailto:sseidmed@gmail.com"><img src="../../static/email.png" alt="" width="30px" height="30px"></a>
+        <!-- <a href="mailto:sseidmed@gmail.com"><img src="../../static/email.png" alt="" width="30px" height="30px"></a> -->
       </p>
-      <!-- <div class="email">
-        <img src="../../static/email.png" alt="" width="50px" height="50px"><p><a href="mailto:sseidmed@gmail.com">sseidmed@gmail.com</a></p>
-      </div> -->
-      
-    </footer>
-    <p>I am a junior developer at Relevize (partner execution platform built for sellers and partners). 
-      I work with Vue.js and Flask, but also proficient in Angular and .NET platform. 
-      I am always open to learning new things.
-      This blog was built with Gridsome.</p>
+      <p>I am a junior developer at Relevize (channel partner marketing platform). 
+        I work with Vue.js and Flask. 
+        I like to learn new tools and technologies whenever I can. I am also an avid reader, 
+        especially books on productivity and self-improvement.<br>
+        <p><i>This blog was built with Gridsome and hosted on Netlify.</i></p>
+      </p>
+    </div>
   </Layout>
 </template>
 
@@ -31,21 +26,28 @@ export default {
 </script>
 
 <style scoped>
-footer {
+/* footer {
   display: flex;
   justify-content: space-between;
   padding: 0px 5px 0px 5px;
   max-width: 760px;
-  background-color: rgb(231,172,207);
   color: #fff;
   max-height: 60px;
-}
-
-.author {
-  display: flex;
-}
+} */
 
 .home-links > a {
   margin: 5px;
+}
+.about {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 50%;
+  justify-content: center;
+  margin: auto;
+}
+
+.about > * {
+  width: 100%;
 }
 </style>

@@ -15,6 +15,7 @@ query Post ($path: String!) {
     title
     content
     date
+    description
   }
 }
 </page-query>
@@ -28,7 +29,8 @@ export default {
   metaInfo() {
     return {
       title: this.$page.post.title,
-      date: new Date(this.$page.post.date).toDateString()
+      date: new Date(this.$page.post.date).toDateString(),
+      description: this.$page.post.description
     }
   }
 }

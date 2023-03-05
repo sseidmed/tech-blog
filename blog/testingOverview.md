@@ -1,6 +1,6 @@
 ---
 title: Notes on Testing
-date: 05-24-2022
+date: 2022-05-24
 ---
 
 ## Testing Overview

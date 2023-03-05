@@ -1,6 +1,6 @@
 ---
 title: Succeeding as a junior developer
-date: 03-04-2023
+date: 2023-03-04
 ---
 
 Starting a new job is extremely exciting and nerve-racking. So if you are reading this because you just got an offer, or started a new job and are drowning in all the new information, or maybe you are still in the process of looking for a most suitable job, then keep on reading. Here I will talk about all the lessons I learned as a junior developer that will also help you succeed.

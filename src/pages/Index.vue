@@ -7,6 +7,7 @@
       <li v-for="post in $page.posts.edges" :key="post.id" class="individual-post">
         <g-link :to="post.node.path"> {{ post.node.title}} <span class="date">{{ post.node.date }}</span>
           </g-link>
+        <!-- <p>{{ post.node.description }}</p> -->
       </li>
     </ul>
     <Pager :info="$page.posts.pageInfo" class="pager-container"
@@ -30,7 +31,8 @@ query Posts ($page: Int) {
         id
         title 
         path
-        date
+        date (format: "D MMMM YYYY")
+        description
       }
     }
   }
@@ -78,10 +80,13 @@ export default {
 .posts {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 10px;
 }
 .individual-post {
-  width: 100%;
+  background-color: white;
+  width: 50%;
+  height: fit-content;
   border: 1px solid rgb(220,220,220);
   padding: 10px;
   font-size: 18px;
@@ -93,5 +98,7 @@ export default {
 
 .date {
   float: right;
+  font-size: 15px;
 }
+
 </style>

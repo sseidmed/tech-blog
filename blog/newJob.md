@@ -1,6 +1,6 @@
 ---
 title: Starting a new job as a developer
-date: 03-29-2022
+date: 2022-03-29
 ---
 
 In less than a year, I changed my job twice. Before all this I was working at Kohl's and folding shirts. I did have a graduate degree that I knew was not going to work out for me. So what did I major in? I majored in International Studies. While it taught me a lot, it was not the right career choice for me. So I started making a list of things I am passionate about that I could turn into a career that will support my lifestyle. 

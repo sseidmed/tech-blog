@@ -1,6 +1,7 @@
 ---
 title: Rescue from the infamous tutorial hell
-date: 05-14-2022
+date: 2022-05-14
+description: Test description
 ---
 
 ### Introduction

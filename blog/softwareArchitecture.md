@@ -1,6 +1,6 @@
 ---
-title: Fundamentals of Software Architecture By Mark Richards, Neal Ford
-date: 05-10-2022
+title: Fundamentals of Software Architecture/By Mark Richards, Neal Ford
+date: 2022-05-10
 ---
 
 # The definition of a software architect

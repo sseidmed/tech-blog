@@ -4,11 +4,14 @@
     <!-- Learn how to use images here: https://gridsome.org/docs/images -->
 
     <ul class="posts">
-      <li v-for="post in $page.posts.edges" :key="post.id" class="individual-post">
-        <g-link :to="post.node.path"> {{ post.node.title}} <span class="date">{{ post.node.date }}</span>
+      <div v-for="post in $page.posts.edges" :key="post.id" class="individual-post">
+        <div>
+          <g-link :to="post.node.path"> 
+            {{ post.node.title}} <span class="date">{{ post.node.date }}</span>
           </g-link>
+        </div>
         <!-- <p>{{ post.node.description }}</p> -->
-      </li>
+        </div>
     </ul>
     <Pager :info="$page.posts.pageInfo" class="pager-container"
        linkClass="pager-container__link" showLinks/>

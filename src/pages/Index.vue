@@ -88,7 +88,7 @@ export default {
 }
 .individual-post {
   align-items: center;
-  background-color: #ffffff;
+  background-color: #dbe1e5;
   border-radius: 5px;
   box-sizing: border-box;
   color: inherit;

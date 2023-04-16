@@ -29,15 +29,15 @@ body {
   margin:0;
   padding:0;
   line-height: 1.5;
-  background-color: #f3f7f9;
-  color: black;
+  background-color: #1f364d;
 }
 .header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 100px;
   height: 200px;
+  background-color: #dbe1e5;
+  margin-bottom: 30px;
 }
 .nav__link {
   margin-left: 20px;

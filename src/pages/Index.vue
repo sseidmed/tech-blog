@@ -1,17 +1,14 @@
 <template>
   <Layout>
-
-    <!-- Learn how to use images here: https://gridsome.org/docs/images -->
-
-    <ul class="posts">
+    <ul class="posts">     
       <div v-for="post in $page.posts.edges" :key="post.id" class="individual-post">
-        <div>
-          <g-link :to="post.node.path"> 
-            {{ post.node.title}} <span class="date">{{ post.node.date }}</span>
-          </g-link>
-        </div>
-        <!-- <p>{{ post.node.description }}</p> -->
-        </div>
+        <g-link :to="post.node.path">
+          <div class="post-title">
+              {{ post.node.title}}          
+          </div>
+          <div class="date">{{ post.node.date }}</div>
+        </g-link>
+      </div>
     </ul>
     <Pager :info="$page.posts.pageInfo" class="pager-container"
        linkClass="pager-container__link" showLinks/>
@@ -22,7 +19,7 @@
 <page-query>
 
 query Posts ($page: Int) {
-  posts: allPost (perPage: 5, page: $page) @paginate {
+  posts: allPost (perPage: 9, page: $page) @paginate {
     pageInfo {
       totalPages
       currentPage	
@@ -82,23 +79,34 @@ export default {
 
 .posts {
   display: flex;
+  margin: auto;
   flex-wrap: wrap;
-  justify-content: center;
-  gap: 10px;
+  justify-content: space-around;
+  row-gap: 40px;
+  width: 80%;
+  margin-bottom: 150px;
 }
 .individual-post {
-  background-color: white;
-  width: 50%;
-  height: fit-content;
-  border: 1px solid rgb(220,220,220);
-  padding: 10px;
-  font-size: 18px;
-  color: white;
-  border-radius: 1px;
-  box-shadow: 0 0 20px -1em black;
-  text-decoration: none;
+  align-items: center;
+  background-color: #ffffff;
+  border-radius: 5px;
+  box-sizing: border-box;
+  color: inherit;
+  display: flex;
+  flex-direction: column;
+  height: 345px;
+  width: 30%;
+  justify-content: flex-start;
+  padding: 35px 35px 0;
+  position: relative;
+  box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
 }
 
+.post-title {
+    font-family: "Roboto", sans-serif;
+    font-size: 24px;
+    margin-top: 22px;
+}
 .date {
   float: right;
   font-size: 15px;

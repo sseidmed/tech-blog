@@ -10,7 +10,6 @@
             {{ post.node.title}} <span class="date">{{ post.node.date }}</span>
           </g-link>
         </div>
-        <!-- <p>{{ post.node.description }}</p> -->
         </div>
     </ul>
     <Pager :info="$page.posts.pageInfo" class="pager-container"
